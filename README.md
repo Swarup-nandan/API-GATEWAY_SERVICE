@@ -16,7 +16,7 @@ A secure API Gateway / Auth service built with **Java 17 + Spring Boot 3**, feat
 | Security         | Spring Security 6 + jjwt 0.11.5 |
 | Rate limiting    | Redis (Lettuce) + Lua script    |
 | Persistence      | Spring Data JPA + H2 (dev)      |
-| Build            | Maven                           |
+| Build            | Maven                           | 
 
 ## Project layout
 
