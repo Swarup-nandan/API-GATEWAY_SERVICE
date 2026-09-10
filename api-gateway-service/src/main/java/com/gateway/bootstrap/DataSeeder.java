@@ -11,19 +11,19 @@ import java.util.Set;
 
 /**
  * Seeds a demo admin and a demo user on startup so the API can be exercised
- * immediately without a manual /register call. Remove or gate behind a
+ * immediately without a manual /register call. Remove or gate behind a 
  * profile before deploying to production.
- */
-@Component
-@RequiredArgsConstructor
-public class DataSeeder implements CommandLineRunner {
+ */ 
+@Component  
+@RequiredArgsConstructor 
+public class DataSeeder implements CommandLineRunner { 
 
-    private final UserRepository userRepository;
-    private final PasswordEncoder passwordEncoder;
+    private final UserRepository userRepository; 
+    private final PasswordEncoder passwordEncoder; 
 
     @Override
-    public void run(String... args) {
-        if (!userRepository.existsByUsername("admin")) {
+    public void run(String... args) { 
+        if (!userRepository.existsByUsername("admin")) { 
             userRepository.save(User.builder()
                     .username("admin")
                     .email("admin@example.com")
