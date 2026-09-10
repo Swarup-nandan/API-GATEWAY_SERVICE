@@ -28,7 +28,7 @@ import java.util.List;
 @EnableMethodSecurity // enables @PreAuthorize for fine-grained RBAC on controller methods
 @RequiredArgsConstructor
 public class SecurityConfig {
-
+    
     private final CustomUserDetailsService userDetailsService;
     private final JwtAuthenticationFilter jwtAuthenticationFilter;
     private final RateLimiterService rateLimiterService;
